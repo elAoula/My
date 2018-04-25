@@ -15,7 +15,7 @@ pipeline {
     }
     stage('CleanPackage Script') {
       steps {
-        sh 'Echo %JAVA_HOME%'
+        echo 'CompleteStep'
       }
     }
     stage('Completed') {
