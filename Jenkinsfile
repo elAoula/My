@@ -19,17 +19,8 @@ pipeline {
       }
     }
     stage('Completed') {
-      parallel {
-        stage('Completed') {
-          steps {
-            echo 'Work completed'
-          }
-        }
-        stage('SendEmail') {
-          steps {
-            mail(subject: 'Blue Ocean ', body: 'AmineMygitPipeLine / master', bcc: 'el.amine.aoula@cgi.com', from: 'el.amine.aoula@cgi.com', to: 'el.amine.aoula@cgi.com')
-          }
-        }
+      steps {
+        echo 'Work completed'
       }
     }
     stage('Mail was sent also') {
