@@ -9,6 +9,8 @@ pipeline {
     stage('Build') {
       steps {
         git 'https://github.com/elAoula/My.git'
+        isUnix()
+        tool 'maven35'
       }
     }
     stage('CleanPackage Script') {
