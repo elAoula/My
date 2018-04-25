@@ -8,7 +8,7 @@ pipeline {
     }
     stage('Build') {
       steps {
-        sh 'ping -c 2 localhost'
+        git 'https://github.com/elAoula/My.git'
       }
     }
     stage('Print Done Message') {
