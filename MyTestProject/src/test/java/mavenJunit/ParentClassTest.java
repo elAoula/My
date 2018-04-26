@@ -1,4 +1,4 @@
-package fi.cgi.otso.lt.junit.tests;
+package mavenJunit;
 
 import static org.junit.Assert.*;
 

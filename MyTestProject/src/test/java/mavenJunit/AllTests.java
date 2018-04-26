@@ -1,4 +1,4 @@
-package fi.cgi.otso.lt.junit.tests;
+package mavenJunit;
 
 import org.junit.runner.RunWith;
 import org.junit.runners.Suite;
