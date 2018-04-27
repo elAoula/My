@@ -13,9 +13,8 @@
 		</dependency>
    </dependencies>
   
-  
   <build>
-    <sourceDirectory>src</sourceDirectory>
+    <sourceDirectory>src/main/java</sourceDirectory> 
     <plugins>
       <plugin>
         <artifactId>maven-war-plugin</artifactId>
@@ -34,7 +33,6 @@
       </plugin>
     </plugins>
   </build>
-  
 
 
 </project>

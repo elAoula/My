@@ -15,7 +15,7 @@ public class ParentClassTestNumberOfChar {
 		assertEquals(1, result);
 		
 	}
-
+	
 	@Test
 	public void testNumberOfCharachtersInAString2() {
 		SimpleClass c = new SimpleClass();
