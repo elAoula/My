@@ -14,6 +14,7 @@ public class ParentClass {
 				count++;
 			}
 		}
+		System.out.println("Word is: " + word + "The total count is: " + count);
 		return count;
 	}
 

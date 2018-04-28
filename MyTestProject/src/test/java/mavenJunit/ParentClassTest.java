@@ -23,4 +23,12 @@ public class ParentClassTest {
 		assertNotEquals(0, result);
 		
 	}
+	
+	
+	@Test
+	public void testFailingCase() {
+		ParentClass n = new ParentClass();
+		int r = n.squareroot(30);
+		assertEquals(9, r);
+	}
 }
