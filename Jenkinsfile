@@ -13,10 +13,10 @@ pipeline {
         tool 'maven35'
       }
     }
-    stage('Test') {
+    stage('Test1') {
       steps {
-         sh 'make check'
-         junit 'reports/**/*.xml'
+        sh 'make check'
+        junit 'reports/**/*.xml'
       }
     }
     stage('Completed') {
