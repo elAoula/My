@@ -14,13 +14,13 @@ pipeline {
       }
     }
     stage('Test') {
-            steps {
-                sh './gradlew check'
-            }
-        }
+      steps {
+        sh './gradlew check'
+      }
+    }
     stage('Completed') {
       steps {
-        echo 'Work completed'
+        echo 'Work completed Test have been run'
       }
     }
     stage('Mail was sent also') {
