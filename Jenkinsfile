@@ -15,7 +15,7 @@ pipeline {
     }
     stage('Test1') {
       steps {
-        junit 'reports/**/*.xml'
+        bat 'make'
       }
     }
     stage('Completed') {
