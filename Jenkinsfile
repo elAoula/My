@@ -13,12 +13,11 @@ pipeline {
         tool 'maven35'
       }
     }
-    stage('CleanPackage Script') {
-      steps {
-        echo 'CompleteStep'
-        build 'MyNewTestProjectOnlyTests'
-      }
-    }
+    stage('Test') {
+            steps {
+                sh './gradlew check'
+            }
+        }
     stage('Completed') {
       steps {
         echo 'Work completed'
@@ -30,4 +29,9 @@ pipeline {
       }
     }
   }
+      post {        
+        always {            
+          junit 'build/reports/**/*.xml'        
+        }    
+      }
 }
