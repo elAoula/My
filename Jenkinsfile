@@ -16,6 +16,7 @@ pipeline {
     stage('CleanPackage Script') {
       steps {
         echo 'CompleteStep'
+        build 'MyNewTestProjectOnlyTests'
       }
     }
     stage('Completed') {
