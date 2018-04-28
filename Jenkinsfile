@@ -15,7 +15,6 @@ pipeline {
     }
     stage('Test1') {
       steps {
-        sh 'make check'
         junit 'reports/**/*.xml'
       }
     }
