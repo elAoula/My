@@ -15,7 +15,7 @@ pipeline {
     }
     stage('Test1') {
       steps {
-        bat 'make'
+        bat 'echo %JAVA_HOME%'
       }
     }
     stage('Completed') {
