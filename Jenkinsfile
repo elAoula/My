@@ -25,7 +25,7 @@ pipeline {
     }
     stage('Mail was sent also') {
       steps {
-        mail(from: 'el.amine.aoula@gmail.com', subject: 'AmineMygitPipeLine / master', body: 'AmineMygitPipeLine / master has been run', to: 'el.amine.aoula@gmail.com')
+        mail(from: 'el.amine.aoula@gmail.com', subject: 'AmineMygitPipeLine / master', body: 'AmineMygitPipeLine / master has been run', to: 'el.amine.aoula@cgi')
         echo 'Mail was sent '
       }
     }
